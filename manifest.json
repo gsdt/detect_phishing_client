@@ -14,13 +14,13 @@
    "default_popup": "popup.html"
   },
   "background":{
-    "scripts": ["eventPage.js","jquery-3.3.1.min.js"],
+    "scripts": ["jquery-3.3.1.min.js", "eventPage.js"],
     "persistent": false 
   },
   "content_scripts": [
     {
       "matches": ["https://developer.chorme.com/*"],
-      "js": ["eventPage.js","jquery-3.3.1.min.js"]
+      "js": ["jquery-3.3.1.min.js", "eventPage.js"]
     }
   ],
   "permissions": [
