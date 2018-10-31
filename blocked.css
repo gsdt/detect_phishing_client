@@ -1,0 +1,18 @@
+body{
+	background-color:#ce3426;
+	color:#fff;
+	font-family:Helvetica,Arial,sans-serif;
+	font-weight:300;
+	font-size:16px;
+	padding-top:100px
+}
+#juno_okyo{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%
+}
+#container{
+	width:600px;
+	margin:0 auto
+}

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "Web Phising",
+  "description": "This extension will be check your url",
+  "version": "1",
+  "icons": {
+    "128": "icon128.png",
+    "32": "icon32.png",
+    "16": "icon.png"
+  },
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "background":{
+    "scripts": ["eventPage.js","jquery-3.3.1.min.js"],
+    "persistent": false 
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://developer.chorme.com/*"],
+      "js": ["eventPage.js","jquery-3.3.1.min.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "notifications",
+    "<all_urls>",
+    "contextMenus",
+    "webNavigation",
+    "storage"
+  ]
+
+}
